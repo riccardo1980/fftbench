@@ -155,7 +155,7 @@ cleanall:
 
 doc:
 	@echo creating html documentation...
-	$(VERBOSE)doxygen fftbench.doxy > log.doxygen 2>&1
+	$(VERBOSE)doxygen config.doxy > log.doxygen 2>&1
 
 # DEPENDENCIES
 
