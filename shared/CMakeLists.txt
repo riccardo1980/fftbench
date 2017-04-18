@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(cmake_cpp)
+project(fftbench)
+
+# add custom Cmake Modules
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/../cmake/Modules)
 
 # add a target to generate API documentation with Doxygen
 find_package(Doxygen)
