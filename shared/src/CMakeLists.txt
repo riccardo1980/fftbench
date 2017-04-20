@@ -4,8 +4,9 @@ set( CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin )
 set(SRCS main.cpp parseUtils.cpp)
 include_directories( ${CMAKE_SOURCE_DIR}/src )
 
-find_package(LibFFTW3)
+find_package(OpenMP REQUIRED)
 
+find_package(LibFFTW3)
 if (LibFFTW3_FOUND)
   list(APPEND SRCS FFTW/C2C_fft_driver.cpp FFTW/Z2Z_fft_driver.cpp
     FFTW/R2C_fft_driver.cpp FFTW/D2Z_fft_driver.cpp

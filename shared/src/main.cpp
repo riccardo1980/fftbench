@@ -72,7 +72,7 @@ void print_help (const char *me){
 
 		<< "-l      loops" << endl
 		<< "        default: 100" << endl << endl
-#ifdef ENABLTHREADS
+#ifdef ENABLETHREADS
 		<< "-n      threads (CPU implementation)" << endl
 		<< "        default: 1" << endl << endl
 #endif
