@@ -15,9 +15,10 @@
 include(FindPackageHandleStandardArgs) 
 
 find_path( LibFFTW3_INCLUDE_DIR fftw3.h 
-  HINTS /usr/include /usr/local/include 
+  HINTS  
   $ENV{FFTW3ROOT}/include
   $ENV{FFTW3_INCLUDE_PATH}
+  /usr/include /usr/local/include
   DOC "FFTW3 headers"
   )
 
